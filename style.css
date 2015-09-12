@@ -49,6 +49,7 @@ html, body
 	transition: width 0.5s, height 0.5s;
 	display: none;
 	background-color: #039BE5;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
 }
 
 .preview

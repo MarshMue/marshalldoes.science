@@ -24,7 +24,6 @@
 			<div class="card">
 				<div class="pic"></div>
 				<div class="preview">content</div>
-
 			</div>	
 			<div class="card">
 				<div class="pic"></div>
@@ -49,7 +48,11 @@
 				mimicCard = $('#expanded-card');
 				mimicCard.css('left', left);
 				mimicCard.css('top', topp);
+				cardholder = $("#cardholder");
+				cardholder.hide();
 				mimicCard.show();
+				mimicCard.css('width',"100%");
+				mimicCard.css('height', inital);
 				mimicCard.html($(this).html());
 			});
 		</script>
