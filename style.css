@@ -39,6 +39,13 @@ html, body
 	color: white;
 	cursor: pointer;
 	transition: box-shadow 0.3s;
+	animation-name: expand;
+	animation-duration: 1s;
+}
+
+@keyframes expand {
+	from {width: 250px;}
+	to {width: 1000px;}
 }
 
 #cardholder
