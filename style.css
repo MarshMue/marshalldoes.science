@@ -3,7 +3,7 @@ html, body
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
-	background-color: #E1F5FE;
+	background-color: #ECEFF1;
 }
 
 #banner
@@ -32,8 +32,10 @@ html, body
 	height: 250px;
 	width: 250px;
 	margin: 25px;
-	background-color: #0091EA;
+	background-color: #039BE5;
 	text-align: center;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
+	color: white;
 }
 
 #cardholder
@@ -43,9 +45,9 @@ html, body
 
 .pic
 {
-	text-align: center
-	width: 246px;
-	height: 70%;
-	background-color: black;
-	margin-bottom: 5px;
+	text-align: center;
+	width: 250px;
+	height: 200px;
+	background-color: white;
+	margin-bottom: 2px;
 }
