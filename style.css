@@ -24,3 +24,11 @@ html, body
 	color: white;
 	cursor: pointer;
 }
+
+.card
+{
+	height: 200px;
+	width: 100px;
+	margin: 50px;
+	background-color: #0091EA;
+}
