@@ -12,6 +12,7 @@ html, body
 	height: 60px;
 	background-color: #0091EA;
 	text-align: center;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
 }
 
 .navitem
@@ -36,6 +37,8 @@ html, body
 	text-align: center;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
 	color: white;
+	cursor: pointer;
+	transition: box-shadow 0.5s;
 }
 
 #cardholder
@@ -50,4 +53,9 @@ html, body
 	height: 200px;
 	background-color: white;
 	margin-bottom: 2px;
+}
+
+.card:hover
+{
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.56);
 }
