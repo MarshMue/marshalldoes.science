@@ -46,8 +46,9 @@ html, body
 	width: 250px;
 	height: 250px;
 	position: absolute;
-	transition: width: 0.5s, height: 0.5s;
+	transition: width 0.5s, height 0.5s;
 	display: none;
+	background-color: #039BE5;
 }
 
 #cardholder
