@@ -44,8 +44,8 @@
 		<script>
 			$(".card").click(function()
 			{
-				left = (this).offset().left;
-				top = (this).offset().top;
+				left = $(this).offset().left;
+				top = $(this).offset().top;
 				mimicCard = $('#expanded-card');
 				mimicCard.css('left', left);
 				mimicCard.css('top', top);
