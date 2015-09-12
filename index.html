@@ -36,10 +36,20 @@
 			</div>
 		</div>
 
+		<div id="expanded-card">
+			
+		</div>
+		
+		
 		<script>
 			$(".card").click(function()
 			{
-				$(this).hide();
+				left = (this).offset().left;
+				top = (this).offset().top;
+				mimicCard = $('#expanded-card');
+				mimicCard.css('left', left);
+				mimicCard.css('top', top);
+				mimicCard.show();
 			});
 		</script>
 
