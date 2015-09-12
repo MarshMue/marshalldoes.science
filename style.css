@@ -51,6 +51,12 @@ html, body
 	background-color: #039BE5;
 }
 
+.preview
+{
+	text-align: center;
+	color: white;
+}
+
 #cardholder
 {
 	text-align: center;
