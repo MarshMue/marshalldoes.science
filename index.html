@@ -15,44 +15,44 @@
 			<div class="navitem">Blog</div>
 			<div class="navitem">Playground</div>
 		</div>
+		<div id="content">
+			<div id="cardholder">
+				<div class="card">
+					<div class="pic"></div>
+					<div class="preview">content</div>
+				</div>
+				<div class="card">
+					<div class="pic"></div>
+					<div class="preview">content</div>
+				</div>	
+				<div class="card">
+					<div class="pic"></div>
+					<div class="preview">content</div>
+				</div>
+				<div class="card">
+					<div class="pic"></div>
+					<div class="preview">content</div>
+				</div>
+			</div>
 
-		<div id="cardholder">
-			<div class="card">
-				<div class="pic"></div>
-				<div class="preview">content</div>
-			</div>
-			<div class="card">
-				<div class="pic"></div>
-				<div class="preview">content</div>
-			</div>	
-			<div class="card">
-				<div class="pic"></div>
-				<div class="preview">content</div>
-			</div>
-			<div class="card">
-				<div class="pic"></div>
-				<div class="preview">content</div>
-			</div>
-		</div>
-
-		<div id="expanded-card">
+			<div id="expanded-card">
 			
+			</div>
 		</div>
-		
 		
 		<script>
 			$(".card").click(function()
 			{
-				left = $(this).offset().left;
-				topp  = $(this).offset().top;
+				left = $("#cardholder").offset().left;
+				topp  = $("#cardholder").offset().top;
 				mimicCard = $('#expanded-card');
 				mimicCard.css('left', left);
 				mimicCard.css('top', topp);
 				cardholder = $("#cardholder");
 				cardholder.hide();
 				mimicCard.show();
-				mimicCard.css('width',"100%");
-				mimicCard.css('height', inital);
+				mimicCard.css('width',$("#cardholder").width());
+				mimicCard.css('height', "250px");
 				mimicCard.html($(this).html());
 			});
 		</script>

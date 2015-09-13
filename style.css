@@ -1,9 +1,15 @@
 html, body
 {
-	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	background-color: #ECEFF1;
+}
+
+#content
+{
+	margin-top: 85px;
+	margin-right: 25px;
+	margin-left: 25px;
 }
 
 #banner
@@ -13,6 +19,9 @@ html, body
 	background-color: #0091EA;
 	text-align: center;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
+	position: fixed;
+	left: 0px;
+	top: 0px;
 }
 
 .navitem
@@ -32,7 +41,8 @@ html, body
 	display: inline-block;
 	height: 250px;
 	width: 250px;
-	margin: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
 	background-color: #039BE5;
 	text-align: center;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
@@ -60,7 +70,7 @@ html, body
 
 #cardholder
 {
-	text-align: center;
+	text-align: center;	
 }
 
 .pic
