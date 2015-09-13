@@ -49,6 +49,7 @@ html, body
 	color: white;
 	cursor: pointer;
 	transition: box-shadow 0.3s;
+	transition: width 0.5s, height 0.5s;
 }
 
 #expanded-card
@@ -60,7 +61,8 @@ html, body
 	display: none;
 	background-color: #039BE5;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
-	margin: 25px;
+	margin-top: 25px;
+	cursor: pointer;
 }
 
 .preview
