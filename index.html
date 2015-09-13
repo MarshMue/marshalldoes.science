@@ -51,7 +51,7 @@
 				cardholder = $("#cardholder");
 				cardholder.hide();
 				mimicCard.show();
-				mimicCard.css('width',$("#cardholder").width());
+				mimicCard.css('width', ($(window).width() - 3*left));
 				mimicCard.css('height', "250px");
 				mimicCard.html($(this).html());
 			});
