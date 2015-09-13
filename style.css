@@ -10,6 +10,7 @@ html, body
 	margin-top: 85px;
 	margin-right: 25px;
 	margin-left: 25px;
+	text-align: center;
 }
 
 #banner
@@ -41,9 +42,7 @@ html, body
 	display: inline-block;
 	height: 250px;
 	width: 250px;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-bottom: 25px;
+	margin: 25px;	
 	background-color: #039BE5;
 	text-align: center;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
@@ -61,6 +60,7 @@ html, body
 	display: none;
 	background-color: #039BE5;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
+	margin: 25px;
 }
 
 .preview
