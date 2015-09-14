@@ -1,16 +1,9 @@
 html, body
 {
+	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	background-color: #ECEFF1;
-}
-
-#content
-{
-	margin-top: 85px;
-	margin-right: 25px;
-	margin-left: 25px;
-	text-align: center;
 }
 
 #banner
@@ -19,10 +12,11 @@ html, body
 	height: 60px;
 	background-color: #0091EA;
 	text-align: center;
-	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
-	position: fixed !important;
-	left: 0px;
-	top: 0px;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);	
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 9999;
 }
 
 .navitem
@@ -49,19 +43,18 @@ html, body
 	color: white;
 	cursor: pointer;
 	transition: box-shadow 0.3s;
-	transition: width 0.5s, height 0.5s;
 }
 
-#expanded-card
+.expanded-card
 {
 	width: 250px;
 	height: 250px;
 	position: absolute;
-	transition: width 0.5s, height 0.5s;
+	transition: width 0.5s, height 0.5s, left 0.5s, right 0.5s;
 	display: none;
 	background-color: #039BE5;
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.26);
-	margin-top: 25px;
+	z-index: 5;
 	cursor: pointer;
 }
 
@@ -74,6 +67,9 @@ html, body
 #cardholder
 {
 	text-align: center;	
+	position: relative;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .pic
@@ -89,3 +85,4 @@ html, body
 {
 	box-shadow: 0px 2px 7px rgba(0,0,0,0.56);
 }
+
