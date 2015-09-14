@@ -41,27 +41,30 @@
 	
 		<script>
 			var selected;
+			var isCardOpen = false;
 
 			$(".card").click(function()
 			{
-				selected = $(this);
-				var left = selected.offset().left - 20;
-				var topp = selected.offset().top - 60;
-				selected.css('opacity', 0);
-				var mimicCard = $('.expanded-card');
-				mimicCard.css('left', left);
-				mimicCard.css('top', topp);
-				mimicCard.show();
-				mimicCard.html($(this).html());
-				setTimeout(function()
+				if (!isCardOpen) 
 				{
-					mimicCard.css('width', '100%');
-					mimicCard.css('left', 0);
-				}, 0);
+					selected = $(this);
+					var left = selected.offset().left - 20;
+					var topp = selected.offset().top - 60;
+					selected.css('opacity', 0);
+					var mimicCard = $('.expanded-card');
+					mimicCard.css('left', left);
+					mimicCard.css('top', topp);
+					mimicCard.show();
+					mimicCard.html($(this).html());
+					setTimeout(function()
+					{
+						mimicCard.css('width', '100%');
+						mimicCard.css('left', 0);
+						isCardOpen = true;
+					}, 0);
+				}
 			});
-		</script>
-		
-		<script>
+
 			$(".expanded-card").click(function()
 			{
 				var left = selected.offset().left - 20;
@@ -77,6 +80,7 @@
 				{
 					mimicCard.hide();
 					selected.css('opacity', 100);
+					isCardOpen = false;
 				}, 500);
 			});
 		</script>
