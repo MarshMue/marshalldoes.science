@@ -65,26 +65,23 @@
 				}
 			});
 
-			$(document).bind('click', function(e)
-			{
-				if($(e.target).closest('.expanded-card').length === 0) 
+			$(".expanded-card").click(function()
+			{	
+				var left = selected.offset().left - 20;
+				var topp = selected.offset().top - 60;
+
+				var mimicCard = $(this);
+
+				mimicCard.css('left', left);
+				mimicCard.css('top', topp);
+				mimicCard.css('width', '250px');
+
+				setTimeout(function()	
 				{
-					var left = selected.offset().left - 20;
-					var topp = selected.offset().top - 60;
-
-					var mimicCard = $(this);
-
-					mimicCard.css('left', left);
-					mimicCard.css('top', topp);
-					mimicCard.css('width', '250px');
-
-					setTimeout(function()
-					{
-						mimicCard.hide();
-						selected.css('opacity', 100);
-						isCardOpen = false;
-					}, 500);
-				}
+					mimicCard.hide();
+					selected.css('opacity', 100);
+					isCardOpen = false;
+				}, 500);
 			});
 		</script>
 
